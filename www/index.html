@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAHA SELL</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;min-height:100vh;
+font-family:Arial,sans-serif;
+color:white;text-align:center;
+background:linear-gradient(135deg,#160044,#ff006e,#00c8ff);
+display:flex;align-items:center;justify-content:center;
+}
+.page{display:none;width:100%;padding:25px}
+.page.active{display:block}
+h1{font-size:12vw;color:#ffe45e;text-shadow:0 0 15px #fff}
+h2{font-size:8vw;color:#fff}
+p{font-size:6vw;font-weight:bold}
+button{
+border:0;border-radius:30px;padding:15px 35px;
+font-size:20px;font-weight:bold;color:white;
+background:linear-gradient(90deg,#ff006e,#7b2cff);
+margin-top:25px;
+}
+.certificate{
+background:#fff0c9;color:#6b241d;
+border:8px double #d49b27;border-radius:15px;padding:22px;
+}
+.certificate h1{font-size:9vw;color:#a52a2a;text-shadow:none}
+.certificate p{font-size:5vw;text-align:left;line-height:1.6}
+.certificate .small{font-size:4vw;text-align:center}
+</style>
+</head>
+<body>
+<section class="page active" id="p1">
+<h1>🌈 Welcome Pratik 🌈</h1>
+<p>You are special ❤️</p>
+<button onclick="nextPage(2)">NEXT ➜</button>
+</section>
+
+<section class="page" id="p2">
+<h1>❤️ Made My Your Father ❤️</h1>
+<h2>~ Gaurav Thombare</h2>
+<button onclick="nextPage(3)">NEXT ➜</button>
+</section>
+
+<section class="page" id="p3">
+<div class="certificate">
+<h1>Birth Certificate</h1>
+<h2 style="color:#a52a2a">of Pratik Sadgir</h2>
+<hr>
+<p>Name - Pratik Thombare</p>
+<p>Father's name - Gaurav Thombare</p>
+<p class="small">Made by Pratik's father ❤️</p>
+</div>
+    <button onclick="nextPage(4)">NEXT ➜</button>
+<button onclick="nextPage(1)">HOME ↻</button>
+</section>
+
+<script>
+function nextPage(n){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById('p'+n).classList.add('active');
+}
+</script>
+
+<section class="page" id="p4">
+  <h1>मेरा प्यार ❤️</h1>
+  <div class="certificate">
+    <h2 style="color:#a52a2a">Hindi / Marathi Gaaliyan</h2>
+    <p>Fool :- चुतिया, चुतिये, चुत्त्या</p>
+    <p>Motherfucker :- मादरचोद, आईझवाड्या, आयझवाड्या, आईघाल्या, आयघाल्या</p>
+    <p>SisterFucker :- भेन्चोद</p>
+    <p>Fucker :- भिकारचोट, चुतमारिच्या, झवाड्या</p>
+    <p>Son of a bitch :- रांडेच्या, फोकनीच्या, फोदरीच्या</p>
+    <p>Your mother's ass :- तुझ्या आईची गांड</p>
+    <p>Fuck your mother :- तुझी आई झवली, आई घातली</p>
+    <p>Suck my dick :- तोंडात घे, चोख माझा लवडा</p>
+  </div>
+  <button onclick="nextPage(1)">HOME 🏠</button>
+</section>
+
+</body>
+</html>
